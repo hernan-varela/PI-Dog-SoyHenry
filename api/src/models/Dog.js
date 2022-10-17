@@ -9,38 +9,44 @@ module.exports = (sequelize) => {
       defaultValue : UUIDV4,
       allowNull : false,
       primaryKey : true,
-    },
+    }, 
+    
     
     name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
 
-    height :{
-      type : DataTypes.ARRAY(DataTypes.STRING),
+    minHeight :{
+      type : DataTypes.STRING,
+      allowNull : false,
+    },
+    maxHeight :{
+      type : DataTypes.STRING,
       allowNull : false,
     },
 
     
-    weight :{
-      type : DataTypes.ARRAY(DataTypes.STRING),
+    minWeight :{
+      type : DataTypes.STRING,
+      allowNull : false,
+    },
+    maxWeight :{
+      type : DataTypes.STRING,
       allowNull : false,
     },
 
     life_span : {
-      type : DataTypes.ARRAY(DataTypes.STRING),
+      type : DataTypes.STRING,
       allowNull : true,
     },
 
-    img :{
-      type : DataTypes.STRING,
-      allowNull: true,
-    },
+   
 
     createdInDb : {
       type : DataTypes.BOOLEAN,
       defaultValue : true,
       allowNull :false
     }
-  });
+  },{timestamps : false});
 };
