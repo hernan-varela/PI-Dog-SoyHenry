@@ -58,7 +58,15 @@ router.post('/create', async (req, res) => {
 
             const flagName = await Dog.findOne({where : {name : name}}) //verifico que el nombre no se repita en la base de datos
 
-            if(!flagLifSpa  || lifeSpToNum === NaN || lifeSpToNum > 22 ){
+       
+            if(minHeight > maxHeight){
+                res.status(405).send({error : 'la altura minima no puede ser mayor a la altura maxima'})
+            }
+
+            else if(minWeight > maxWeight){
+                res.status(405).send({error : 'El peso minimo no puede ser mayor al peso maximo'})
+            }
+            else if(!flagLifSpa  || lifeSpToNum === NaN || lifeSpToNum > 22 ){
                 res.status(405).send({error : 'life span debe ser un numero y estar dentro del rngo de 1 a 22'})
                 
             } 
