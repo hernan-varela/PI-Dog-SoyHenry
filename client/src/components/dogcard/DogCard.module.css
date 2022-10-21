@@ -1,0 +1,63 @@
+.cardContainer{
+  
+    border: solid 2px black;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.cardContainer:hover{
+    width: 305px;
+    height: 355px;
+    box-shadow: 10px 12px 10px rgba(11, 12, 12, 0.375);
+}
+
+.containerImgDog{
+    margin-top: -40%;
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   display: flex;
+   border: 7px solid white;
+ 
+
+}
+
+.imagenFondo{
+    background-image: url('../../images/fondoCard.jpg');
+    height: 35%;
+}
+
+.weight{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+   
+    width: 100%;
+    
+}
+
+.temperament{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    align-items:baseline;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+
+   
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}

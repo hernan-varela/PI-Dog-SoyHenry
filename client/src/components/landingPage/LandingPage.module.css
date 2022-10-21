@@ -1,0 +1,57 @@
+.contenedorPincipal{
+    display: flex;
+    min-height: 100vh;
+    
+   background-size: cover;
+}
+
+
+.contenedorIzq{
+    background-color: black;
+    width: 40%;
+}
+
+.contenedorDer{
+    background-image: url('../../images/fondo-landing.jpg') ;
+    width: 60%;
+    background-size: cover;
+
+}
+
+
+.logo{
+    max-width: 80%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.texto{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 50px;
+}
+
+.huella{
+  height: 15px;
+  width: 15px;
+
+}
+
+.btnStart{
+    height: 25px;
+    width: 160px;
+    background-color: rgba(212, 47, 157, 0.712);
+    color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+  
+    
+}
+.btnStart:hover{ 
+    height: 30px;
+    width: 180px;
+    box-shadow: 5px 6px 5px rgba(245, 222, 179, 0.377);
+}

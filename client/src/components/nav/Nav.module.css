@@ -1,0 +1,50 @@
+.containerNav{
+    display: flex;
+    background-color: rgb(16, 62, 212);
+    justify-content: space-around;
+    
+}
+
+.logo{
+    height: 50px;
+    width: 120px;
+}
+
+
+.optionsFilter{
+    display : flex;
+    align-items: center;
+}
+
+.optionsFilter h4 {
+    color: white;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.optionsFilter select{
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(16, 62, 212);
+    border: 1px solid white;
+    color: white;
+
+}
+
+.createDog {
+    color:  white;
+    border: 1px solid white;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 100px;
+    
+}
+
+.createDog:hover{
+    color: rgb(16, 62, 212);
+    background-color: white;
+}
+
+.link{
+    text-decoration: none;
+}

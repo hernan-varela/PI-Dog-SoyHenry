@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
    try {
     const temperaments = await utils.getAllTemper()
 
-    if(temperaments.length === 0){
+    if(temperaments.length === 1){
         res.status(405).send({ error : 'No se encontro ningun tipo de temperamento en la base de datos' })
     }else{
         res.status(201).send(temperaments)
